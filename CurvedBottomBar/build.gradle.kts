@@ -63,8 +63,8 @@ afterEvaluate {
         publications {
             //noinspection WrongGradleMethod
             create<MavenPublication>("release") {
-                groupId = "com.example.curvedbottombar"
-                artifactId = "mylibrary"
+                groupId = "com.github.Pathrinarayanan"
+                artifactId = "CurvedBottomBar"
                 version = "1.0.0"
 
                 from(components["release"])
