@@ -27,6 +27,12 @@ android {
             )
         }
     }
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -65,7 +71,7 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 groupId = "com.github.Pathrinarayanan"
                 artifactId = "CurvedBottomBar"
-                version = "1.0.0"
+                version = "1.1.0"
 
                 from(components["release"])
             }
