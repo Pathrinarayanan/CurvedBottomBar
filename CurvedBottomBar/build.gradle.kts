@@ -71,7 +71,7 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 groupId = "com.github.Pathrinarayanan"
                 artifactId = "CurvedBottomBar"
-                version = "1.1.0"
+                version = "1.2.0"
 
                 from(components["release"])
             }
